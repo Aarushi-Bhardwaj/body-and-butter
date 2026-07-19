@@ -4983,3 +4983,43 @@ width:100%;
     font-size:32px;
     cursor:pointer;
 }
+.scroll-down{
+
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    background:#018F7A;
+
+    color:#fff;
+
+    font-size:28px;
+
+    text-decoration:none;
+
+    margin-top:40px;
+
+    animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+    0%,20%,50%,80%,100%{
+        transform:translateY(0);
+    }
+
+    40%{
+        transform:translateY(-12px);
+    }
+
+    60%{
+        transform:translateY(-6px);
+    }
+
+}
