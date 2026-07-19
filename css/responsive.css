@@ -214,3 +214,86 @@ select{
 }
 
 }
+/* ================= MOBILE NAVBAR ================= */
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    color:#018F7A;
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+.logo img{
+
+    width:180px;
+
+}
+
+.menu-toggle{
+
+    display:block;
+
+}
+
+.nav-links{
+
+    position:absolute;
+
+    top:90px;
+
+    left:0;
+
+    width:100%;
+
+    background:#fff;
+
+    display:none;
+
+    flex-direction:column;
+
+    padding:25px 0;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+    z-index:999;
+
+}
+
+.nav-links.active{
+
+    display:flex;
+
+}
+
+.nav-links li{
+
+    margin:15px 0;
+
+}
+
+.nav-icons{
+
+    display:none;
+
+}
+
+}
