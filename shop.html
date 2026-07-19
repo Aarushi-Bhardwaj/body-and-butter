@@ -1,0 +1,437 @@
+<!-- ================= SHOP HERO ================= -->
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Body & Butter | Shop</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body class="inner-page">
+    <!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo/logo.png" alt="Body & Butter">
+        </a>
+    </div>
+
+    <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="ingredients.html">Ingredients</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+    <div class="nav-icons">
+
+        <button class="icon-btn" onclick="toggleSearch()">
+            <i class="bi bi-search"></i>
+        </button>
+
+        <a href="wishlist.html" class="icon-btn">
+            <i class="bi bi-heart"></i>
+        </a>
+
+        <a href="cart.html" class="icon-btn cart-icon">
+            <i class="bi bi-bag"></i>
+            <span id="cartCount" class="cart-count">0</span>
+        </a>
+
+    </div>
+
+</nav>
+
+</header>
+<div id="searchBox" class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+        onkeyup="searchProducts()">
+
+    <div id="searchResults"></div>
+
+</div>
+
+<section class="shop-hero">
+
+    <div class="container">
+
+<h5>Luxury Skincare Collection</h5>
+
+<h1>Discover Your Perfect Skincare Ritual</h1>
+
+<p>
+Explore our handcrafted soaps, face care, body care and botanical skincare essentials made with premium natural ingredients.
+</p>
+
+       
+
+    </div>
+
+</section>
+<!-- ================= SHOP PRODUCTS ================= -->
+
+<section class="shop-products">
+    <div class="filter-buttons">
+
+    <button class="filter-btn active" onclick="filterProducts('all')">All</button>
+
+    <button class="filter-btn" onclick="filterProducts('soap')">Soap</button>
+
+    <button class="filter-btn" onclick="filterProducts('facewash')">Face Wash</button>
+
+    <button class="filter-btn" onclick="filterProducts('bodywash')">Body Wash</button>
+
+    <button class="filter-btn" onclick="filterProducts('serum')">Serum</button>
+
+    <button class="filter-btn" onclick="filterProducts('lotion')">Lotion</button>
+
+    <button class="filter-btn" onclick="filterProducts('sunscreen')">Sunscreen</button>
+
+</div>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>Our Collection</h5>
+
+            <h2>Premium Skincare Products</h2>
+
+            <p>
+                Discover handcrafted skincare essentials inspired by nature and designed for every skin type.
+            </p>
+
+        </div>
+
+        
+
+            <!-- Rose -->
+            <div class="shop-card" data-category="soap">
+                <span class="badge">Best Seller</span>
+                <img src="images/collections/rose.png" alt="Rose Soap">
+                <h3>Rose Soap</h3>
+                <p>₹399</p>
+               <a href="rose-soap.html" class="shop-btn">View Details</a>
+            </div>
+
+            <!-- Charcoal -->
+           <div class="shop-card" data-category="soap">
+                <span class="badge">Best Seller</span>
+                <img src="images/collections/charcoal.png" alt="Charcoal Soap">
+                <h3>Activated Charcoal</h3>
+                <p>₹399</p>
+               <a href="charcoal.html" class="shop-btn">View Details</a>
+            </div>
+
+            <!-- Kesar -->
+            <div class="shop-card" data-category="soap">
+                <img src="images/collections/kesar.png" alt="Kesar Soap">
+                <h3>Kesar Soap</h3>
+                <p>₹399</p>
+               <a href="kesar.html" class="shop-btn">View Details</a>
+            </div>
+
+            <!-- Ubtan -->
+          <div class="shop-card" data-category="soap">
+                <img src="images/collections/ubtan.png" alt="Ubtan Soap">
+                <h3>Ubtan Soap</h3>
+                <p>₹399</p>
+               <a href="ubtan.html" class="shop-btn">View Details</a>
+            </div>
+
+            <!-- Multani -->
+            <div class="shop-card" data-category="soap">
+                <img src="images/collections/multani-mitti.png" alt="Multani Mitti Soap">
+                <h3>Multani Mitti Soap</h3>
+                <p>₹399</p>
+               <a href="multani.html" class="shop-btn">View Details</a>
+            </div>
+
+            <!-- Face Wash -->
+            <div class="shop-card" data-category="facewash">
+                <span class="badge new">New</span>
+                <img src="images/products/facewash.png" alt="Face Wash">
+                <h3>Face Wash</h3>
+                <p>₹599</p>
+         <a href="facewash.html" class="shop-btn">View Details</a>
+            </div>
+
+            <!-- Body Wash -->
+            <div class="shop-card" data-category="bodywash">
+                <span class="badge new">New</span>
+                <img src="images/products/bodywash.png" alt="Body Wash">
+                <h3>Body Wash</h3>
+                <p>₹699</p>
+             <a href="bodywash.html" class="shop-btn">View Details</a>
+            </div>
+
+            <!-- Serum -->
+            <div class="shop-card" data-category="serum">
+                <span class="badge new">New</span>
+                <img src="images/products/serum.png" alt="Serum">
+                <h3>Face Serum</h3>
+                <p>₹999</p>
+                <a href="serum.html" class="shop-btn">View Details</a>
+            </div>
+
+            <!-- Lotion -->
+            <div class="shop-card" data-category="lotion">
+                <span class="badge new">New</span>
+                <img src="images/products/lotion.png" alt="Lotion">
+                <h3>Body Lotion</h3>
+                <p>₹799</p>
+                <a href="lotion.html" class="shop-btn">View Details</a>
+            </div>
+
+            <!-- Sunscreen -->
+           <div class="shop-card" data-category="sunscreen">
+                <span class="badge new">New</span>
+                <img src="images/products/sunscreen.png" alt="Sunscreen">
+                <h3>Sunscreen</h3>
+                <p>₹899</p>
+              <a href="sunscreen.html" class="shop-btn">View Details</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= OUR PROMISE ================= -->
+
+<section class="our-promise">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>Why Body & Butter?</h5>
+
+            <h2>Our Promise To Your Skin</h2>
+
+            <p>
+                Every product is thoughtfully handcrafted with premium botanical ingredients to deliver a luxurious skincare experience.
+            </p>
+
+        </div>
+
+        <div class="promise-grid">
+
+            <div class="promise-card">
+
+                <i class="bi bi-flower1"></i>
+
+                <h3>100% Natural</h3>
+
+                <p>Made using carefully selected botanical ingredients.</p>
+
+            </div>
+
+            <div class="promise-card">
+
+                <i class="bi bi-droplet-half"></i>
+
+                <h3>Skin Friendly</h3>
+
+                <p>Gentle formulations suitable for everyday use.</p>
+
+            </div>
+
+            <div class="promise-card">
+
+                <i class="bi bi-recycle"></i>
+
+                <h3>Eco Friendly</h3>
+
+                <p>Sustainable packaging that cares for nature.</p>
+
+            </div>
+
+            <div class="promise-card">
+
+                <i class="bi bi-award"></i>
+
+                <h3>Premium Quality</h3>
+
+                <p>Luxury handcrafted products with exceptional care.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="instagram-follow">
+
+    <div class="container">
+
+        <div class="instagram-box">
+
+            <i class="bi bi-instagram instagram-icon"></i>
+
+            <h2>Follow Our Journey</h2>
+
+            <p>
+                Stay connected with Body & Butter for exclusive skincare tips,
+                new product launches, behind-the-scenes moments and special offers.
+            </p>
+
+            <a href="https://www.instagram.com/bodyandbutterr/"
+               target="_blank"
+               class="insta-btn">
+
+                @bodyandbutterr
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <div class="newsletter-box">
+
+            <h5>Stay Connected</h5>
+
+            <h2>Join The Body & Butter Family</h2>
+
+            <p>
+                Subscribe to receive skincare tips, exclusive offers, new product launches and special discounts directly in your inbox.
+            </p>
+
+           <form id="newsletterForm" class="newsletter-form">
+
+    <input
+        type="email"
+        id="newsletterEmail"
+        placeholder="Enter your email address"
+        required>
+
+    <button type="submit">
+        Subscribe
+    </button>
+
+</form>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <img src="images/logo/logo.png" class="footer-logo">
+
+                <p>
+                    Luxury handcrafted skincare inspired by nature and made with love.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <div>
+
+                <h3>Products</h3>
+
+                <a href="#">Soap</a>
+                <a href="#">Face Wash</a>
+                <a href="#">Body Wash</a>
+                <a href="#">Serum</a>
+
+            </div>
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>support@bodyandbutter.com</p>
+
+                <p>+91 XXXXX XXXXX</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+
+            © 2026 Body & Butter. All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+<div id="quickModal" class="quick-modal">
+
+    <div class="quick-content">
+
+        <span class="close" onclick="closeQuickView()">&times;</span>
+
+        <img id="quickImg">
+
+        <h2 id="quickTitle"></h2>
+
+        <h3 id="quickPrice"></h3>
+
+        <p id="quickDesc"></p>
+
+    </div>
+
+</div>
+</body>
+</html>

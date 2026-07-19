@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Body & Butter | Cart</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body class="inner-page">
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo/logo.png" alt="Body & Butter">
+        </a>
+    </div>
+
+   <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="ingredients.html">Ingredients</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+    <div class="nav-icons">
+
+        <button class="icon-btn" onclick="toggleSearch()">
+            <i class="bi bi-search"></i>
+        </button>
+
+        <a href="wishlist.html" class="icon-btn">
+            <i class="bi bi-heart"></i>
+        </a>
+
+        <a href="cart.html" class="icon-btn cart-icon">
+            <i class="bi bi-bag"></i>
+            <span id="cartCount" class="cart-count">0</span>
+        </a>
+
+    </div>
+
+</nav>
+
+</header>
+<div id="searchBox" class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+        onkeyup="searchProducts()">
+
+    <div id="searchResults"></div>
+
+</div>
+
+    <!-- ================= CART HERO ================= -->
+
+<section class="cart-hero">
+
+    <div class="container">
+
+        <h5>Your Shopping Cart</h5>
+
+        <h1>Review Your Order</h1>
+
+        <p>
+            Check your selected products before proceeding to checkout.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= CART ================= -->
+
+<section class="cart-section">
+
+    <div class="container">
+
+        <table class="cart-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+
+                </tr>
+
+            </thead>
+
+           <tbody id="cartBody">
+
+
+
+
+</tbody>
+
+        </table>
+
+    <div class="cart-summary">
+
+    <h3>Order Summary</h3>
+
+    <p>
+
+        Subtotal
+
+        <span id="subtotal">₹0</span>
+
+    </p>
+
+    <p>
+
+        Shipping
+
+        <span>FREE</span>
+
+    </p>
+
+    <hr>
+
+    <h2>
+
+        Total
+
+        <span id="grandTotal">₹0</span>
+
+    </h2>
+
+    <button
+    class="btn-outline"
+    onclick="clearCart()"
+    style="width:100%;margin-top:20px;">
+
+        Clear Cart
+
+    </button>
+
+</div> 
+        <div class="cart-buttons">
+
+            <a href="shop.html" class="btn-outline">
+
+                Continue Shopping
+
+            </a>
+<button class="btn" onclick="goToCheckout()">
+    Proceed To Checkout
+</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>
+

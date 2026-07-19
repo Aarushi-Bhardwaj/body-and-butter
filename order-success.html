@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Order Successful | Body & Butter</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+
+margin:0;
+
+font-family:'Poppins',sans-serif;
+
+background:#f9f5ef;
+
+}
+
+.success-container{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:40px;
+
+}
+
+.success-box{
+
+background:#fff;
+
+width:650px;
+
+max-width:100%;
+
+padding:50px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.success-icon{
+
+font-size:80px;
+
+margin-bottom:20px;
+
+}
+
+.success-box h1{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:52px;
+
+color:#0d9b87;
+
+margin-bottom:10px;
+
+}
+
+.success-box h2{
+
+font-size:28px;
+
+margin:20px 0;
+
+color:#333;
+
+}
+
+.success-box p{
+
+font-size:17px;
+
+line-height:1.8;
+
+color:#666;
+
+margin:12px 0;
+
+}
+
+.order-details{
+
+background:#f7f7f7;
+
+padding:20px;
+
+border-radius:15px;
+
+margin:30px 0;
+
+text-align:left;
+
+}
+
+.order-details p{
+
+margin:10px 0;
+
+font-size:16px;
+
+}
+
+.success-btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+margin-top:20px;
+
+background:#0d9b87;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.success-btn:hover{
+
+background:#087d6d;
+
+transform:translateY(-3px);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="success-container">
+
+<div class="success-box">
+
+<div class="success-icon">
+
+✅
+
+</div>
+
+<h1>
+
+Order Placed Successfully!
+
+</h1>
+
+<h2 id="customerName">
+
+Thank You!
+
+</h2>
+
+<p>
+
+Your order has been received successfully.
+
+Our team will begin processing it shortly.
+
+</p>
+
+<div class="order-details">
+
+<p>
+
+<strong>Order ID:</strong>
+
+<span id="orderNumber"></span>
+
+</p>
+
+<p>
+
+<strong>Estimated Delivery:</strong>
+
+3–5 Business Days
+
+</p>
+
+<p>
+
+<strong>Payment Method:</strong>
+
+<span id="paymentMethod"></span>
+
+</p>
+
+<p>
+
+<strong>Status:</strong>
+
+Confirmed ✅
+
+</p>
+
+</div>
+
+<a href="shop.html" class="success-btn">
+
+Continue Shopping
+
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+const order = JSON.parse(localStorage.getItem("lastOrder"));
+
+const orderId = localStorage.getItem("orderId");
+
+if(order){
+
+document.getElementById("customerName").innerHTML =
+"Thank you, " + order.name + "!";
+
+document.getElementById("paymentMethod").innerHTML =
+order.payment;
+
+}
+
+if(orderId){
+
+document.getElementById("orderNumber").innerHTML =
+orderId;
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wishlist | Body & Butter</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/wishlist.css">
+</head>
+<body class="inner-page">
+
+<header>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo/logo.png" alt="Body & Butter">
+        </a>
+    </div>
+
+     <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="ingredients.html">Ingredients</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+    <div class="nav-icons">
+
+        <button class="icon-btn" onclick="toggleSearch()">
+            <i class="bi bi-search"></i>
+        </button>
+
+        <a href="wishlist.html" class="icon-btn">
+            <i class="bi bi-heart"></i>
+        </a>
+
+        <a href="cart.html" class="icon-btn cart-icon">
+            <i class="bi bi-bag"></i>
+            <span id="cartCount" class="cart-count">0</span>
+        </a>
+
+    </div>
+
+</nav>
+
+</header>
+
+<section class="wishlist-section">
+<div class="container">
+<h1>My Wishlist</h1>
+
+<div id="wishlistContainer"></div>
+
+<div class="wishlist-actions">
+<button class="btn-outline" onclick="clearWishlist()">Clear Wishlist</button>
+<a href="shop.html" class="btn">Continue Shopping</a>
+</div>
+
+</div>
+</section>
+
+<footer>
+<div class="container">
+<p style="text-align:center;padding:20px 0;">© 2026 Body & Butter</p>
+</div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", renderWishlist);
+
+function renderWishlist(){
+const box=document.getElementById("wishlistContainer");
+let wishlist=JSON.parse(localStorage.getItem("wishlist"))||[];
+
+if(wishlist.length===0){
+box.innerHTML='<div class="empty"><i class="bi bi-heart"></i><h2>Your wishlist is empty</h2><a class="btn" href="shop.html">Shop Now</a></div>';
+return;
+}
+
+box.innerHTML=wishlist.map(item=>`
+<div class="wishlist-card">
+<img src="${item.image}" alt="${item.name}">
+<div class="wishlist-info">
+<h3>${item.name}</h3>
+<p>₹${item.price}</p>
+</div>
+<div class="wishlist-buttons">
+<button class="btn" onclick="moveToCart('${item.name}')">Move to Cart</button>
+<button class="btn-outline" onclick="removeWishlist('${item.name}')">Remove</button>
+</div>
+</div>`).join("");
+}
+
+function removeWishlist(name){
+let wishlist=JSON.parse(localStorage.getItem("wishlist"))||[];
+wishlist=wishlist.filter(i=>i.name!==name);
+localStorage.setItem("wishlist",JSON.stringify(wishlist));
+renderWishlist();
+}
+
+function moveToCart(name){
+let wishlist=JSON.parse(localStorage.getItem("wishlist"))||[];
+const item=wishlist.find(i=>i.name===name);
+if(item){
+addToCart(item.name,item.price,item.image);
+removeWishlist(name);
+}
+}
+
+function clearWishlist(){
+localStorage.removeItem("wishlist");
+renderWishlist();
+}
+</script>
+
+</body>
+</html>

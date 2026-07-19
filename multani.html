@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Body & Butter | Multani Mitti Soap</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="inner-page">
+
+<header>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo/logo.png" alt="Body & Butter">
+        </a>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ingredients.html">Ingredients</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-icons">
+
+        <button class="icon-btn" onclick="toggleSearch()">
+            <i class="bi bi-search"></i>
+        </button>
+
+        <a href="wishlist.html" class="icon-btn">
+            <i class="bi bi-heart"></i>
+        </a>
+
+        <a href="cart.html" class="icon-btn cart-icon">
+            <i class="bi bi-bag"></i>
+            <span id="cartCount" class="cart-count">0</span>
+        </a>
+
+    </div>
+
+</nav>
+
+</header>
+
+
+<div id="searchBox" class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+        onkeyup="searchProducts()">
+
+    <div id="searchResults"></div>
+
+</div>
+<section class="product-details">
+<div class="container">
+<div class="product-wrapper">
+
+<div class="product-gallery">
+<div class="main-image">
+<img id="mainProduct" src="images/collections/multani-mitti.png" alt="Multani Mitti Soap">
+</div>
+</div>
+
+<div class="product-info">
+<p class="breadcrumb">Home / Shop / Multani Mitti Soap</p>
+
+<h1>Multani Mitti Soap</h1>
+
+<div class="stars">★★★★★</div>
+
+<h2>₹399</h2>
+
+<div class="quantity-box">
+<button onclick="decreaseQty()">−</button>
+<span id="qty">1</span>
+<button onclick="increaseQty()">+</button>
+</div>
+
+<p class="description">
+Our handcrafted Multani Mitti Soap is enriched with Fuller's Earth to gently cleanse, absorb excess oil and leave your skin feeling fresh, smooth and naturally radiant after every wash.
+</p>
+
+<ul>
+<li>✔ Handmade in Small Batches</li>
+<li>✔ Natural Multani Mitti</li>
+<li>✔ Sulphate & Paraben Free</li>
+<li>✔ Ideal for Oily & Combination Skin</li>
+</ul>
+
+<div class="product-buttons">
+
+<button
+class="btn"
+onclick="addToCart('Multani Mitti Soap',399,'images/collections/multani.png')">
+
+Add To Cart
+
+</button>
+
+<button
+class="btn-outline"
+onclick="buyNow('Multani Mitti Soap',399,'images/collections/multani.png')">
+
+Buy Now
+
+</button>
+
+<button
+class="btn-outline"
+onclick="addToWishlist('Multani Mitti Soap',399,'images/collections/multani.png')">
+
+<i class="bi bi-heart"></i>
+
+&nbsp;Add To Wishlist
+
+</button>
+
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<section class="product-benefits">
+<div class="container">
+<div class="section-title">
+<h5>Why You'll Love It</h5>
+<h2>Key Benefits</h2>
+</div>
+
+<div class="promise-grid">
+<div class="promise-card">
+<i class="bi bi-droplet-half"></i>
+<h3>Oil Control</h3>
+<p>Absorbs excess oil for a fresh, clean feel.</p>
+</div>
+
+<div class="promise-card">
+<i class="bi bi-stars"></i>
+<h3>Natural Glow</h3>
+<p>Helps reveal brighter, healthier-looking skin.</p>
+</div>
+
+<div class="promise-card">
+<i class="bi bi-heart"></i>
+<h3>Deep Cleansing</h3>
+<p>Removes impurities while remaining gentle on skin.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="ingredients">
+<div class="container">
+<div class="section-title">
+<h5>Ingredients</h5>
+<h2>Made With Nature</h2>
+</div>
+
+<div class="about-features">
+<div>🪨 Multani Mitti</div>
+<div>🥥 Coconut Oil</div>
+<div>🧈 Shea Butter</div>
+<div>🌿 Essential Oils</div>
+</div>
+</div>
+</section>
+
+<section class="instagram-follow">
+<div class="container">
+<div class="instagram-box">
+<i class="bi bi-instagram instagram-icon"></i>
+<h2>Follow Our Journey</h2>
+<p>Stay connected with Body & Butter for skincare tips, new launches and exclusive offers.</p>
+<a href="https://www.instagram.com/bodyandbutterr/" target="_blank" class="insta-btn">@bodyandbutterr</a>
+</div>
+</div>
+</section>
+
+<section class="newsletter">
+<div class="container">
+<div class="newsletter-box">
+<h5>Stay Connected</h5>
+<h2>Join The Body & Butter Family</h2>
+<p>Subscribe to receive skincare tips, exclusive offers and new product launches.</p>
+<form id="newsletterForm" class="newsletter-form">
+
+    <input
+        type="email"
+        id="newsletterEmail"
+        placeholder="Enter your email address"
+        required>
+
+    <button type="submit">
+        Subscribe
+    </button>
+
+</form>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div>
+<img src="images/logo/logo.png" class="footer-logo" alt="Logo">
+<p>Luxury handcrafted skincare inspired by nature and made with love.</p>
+</div>
+<div>
+<h3>Quick Links</h3>
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</div>
+<div>
+<h3>Products</h3>
+<a href="shop.html">Soap</a>
+<a href="shop.html">Face Wash</a>
+<a href="shop.html">Body Wash</a>
+<a href="shop.html">Serum</a>
+</div>
+<div>
+<h3>Contact</h3>
+<p>support@bodyandbutter.com</p>
+<p>+91 XXXXX XXXXX</p>
+</div>
+</div>
+<hr>
+<div class="copyright">© 2026 Body & Butter. All Rights Reserved.</div>
+</div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

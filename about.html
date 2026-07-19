@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Body & Butter</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body class="inner-page">
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo/logo.png" alt="Body & Butter">
+        </a>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Ingredients</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-icons">
+
+        <button class="icon-btn" onclick="toggleSearch()">
+            <i class="bi bi-search"></i>
+        </button>
+
+        <a href="wishlist.html" class="icon-btn">
+            <i class="bi bi-heart"></i>
+        </a>
+
+        <a href="cart.html" class="icon-btn cart-icon">
+            <i class="bi bi-bag"></i>
+            <span id="cartCount" class="cart-count">0</span>
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+</header>
+<div id="searchBox" class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+        onkeyup="searchProducts()">
+
+    <div id="searchResults"></div>
+
+</div>
+<!-- ================= HERO SECTION ================= -->
+
+<!-- ================= HERO SECTION ================= -->
+
+<!-- ================= ABOUT HERO ================= -->
+
+<section class="about-hero">
+
+    <div class="container">
+
+        <h5>About Body & Butter</h5>
+
+        <h1>Handcrafted Luxury Inspired By Nature</h1>
+
+        <p>
+            Every product is thoughtfully handcrafted using premium botanical ingredients to create a luxurious skincare experience that celebrates natural beauty.
+        </p>
+
+    </div>
+
+</section>
+<section class="our-story">
+
+<div class="container">
+
+<div class="story-wrapper">
+
+<div class="story-image">
+
+<img src="images/about/about-story.png" alt="Body & Butter">
+
+</div>
+
+<div class="story-content">
+
+<h5>Our Story</h5>
+
+<h2>Inspired By Nature, Crafted With Love</h2>
+
+<p>
+At Body & Butter, we believe skincare should be a luxurious ritual rather than a routine. Every product is thoughtfully handcrafted using premium botanical ingredients chosen for their purity and effectiveness.
+</p>
+
+<p>
+From nourishing handmade soaps to modern skincare essentials, our products are designed to celebrate natural beauty while delivering a premium skincare experience.
+</p>
+
+<a href="shop.html" class="btn">
+Explore Collection
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= MISSION VISION VALUES ================= -->
+
+<section class="mission-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>Who We Are</h5>
+
+            <h2>Mission • Vision • Values</h2>
+
+            <p>
+                Everything we create is inspired by nature, guided by quality and crafted with care.
+            </p>
+
+        </div>
+
+        <div class="mission-grid">
+
+            <div class="mission-card">
+
+                <i class="bi bi-stars"></i>
+
+                <h3>Our Mission</h3>
+
+                <p>
+                    To create luxurious handcrafted skincare that combines nature's goodness with exceptional quality.
+                </p>
+
+            </div>
+
+            <div class="mission-card">
+
+                <i class="bi bi-eye"></i>
+
+                <h3>Our Vision</h3>
+
+                <p>
+                    To become a trusted destination for premium natural skincare that people love every day.
+                </p>
+
+            </div>
+
+            <div class="mission-card">
+
+                <i class="bi bi-heart-fill"></i>
+
+                <h3>Our Values</h3>
+
+                <p>
+                    Natural ingredients, sustainability, honesty, craftsmanship and customer happiness.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= OUR PROCESS ================= -->
+
+<section class="our-process">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>How We Create</h5>
+
+            <h2>Our Crafting Process</h2>
+
+            <p>
+                Every Body & Butter product is carefully handcrafted through a thoughtful process that combines premium ingredients with exceptional care.
+            </p>
+
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+
+                <i class="bi bi-flower1"></i>
+
+                <h3>Select Ingredients</h3>
+
+                <p>
+                    We carefully source premium botanical ingredients known for their purity and skin-loving benefits.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <i class="bi bi-droplet-half"></i>
+
+                <h3>Handcrafted</h3>
+
+                <p>
+                    Every batch is handcrafted with attention to detail to ensure quality and consistency.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <i class="bi bi-patch-check"></i>
+
+                <h3>Quality Tested</h3>
+
+                <p>
+                    Each product is thoroughly checked to meet our quality standards before it reaches you.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <i class="bi bi-box-seam"></i>
+
+                <h3>Packed With Care</h3>
+
+                <p>
+                    Beautifully packaged and delivered with the same care that goes into creating every product.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= BRAND BANNER ================= -->
+
+<section class="brand-banner">
+
+    <div class="container">
+
+        <div class="banner-content">
+
+            <h5>Luxury Skincare Experience</h5>
+
+            <h2>Beautiful Skin Begins With Nature</h2>
+
+            <p>
+                Every Body & Butter product is lovingly handcrafted with botanical ingredients,
+                luxurious formulations and a commitment to quality that your skin deserves.
+            </p>
+
+            <a href="shop.html" class="btn">
+                Shop Collection
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= BEST SELLERS ================= -->
+
+<section class="about-products">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>Our Best Sellers</h5>
+
+            <h2>Customer Favorites</h2>
+
+            <p>
+                Discover the handcrafted products our customers love the most.
+            </p>
+
+        </div>
+
+        <div class="about-product-grid">
+
+            <div class="about-product-card">
+
+                <img src="images/collections/rose.png" alt="Rose Soap">
+
+                <h3>Rose Soap</h3>
+
+                <p>Luxurious floral cleansing with natural rose extracts.</p>
+
+                <a href="product.html" class="shop-btn">View Product</a>
+
+            </div>
+
+            <div class="about-product-card">
+
+                <img src="images/collections/charcoal.png" alt="Charcoal Soap">
+
+                <h3>Activated Charcoal</h3>
+
+                <p>Deep cleansing for fresh, healthy-looking skin.</p>
+
+                <a href="product.html" class="shop-btn">View Product</a>
+
+            </div>
+
+            <div class="about-product-card">
+
+                <img src="images/collections/kesar.png" alt="Kesar Soap">
+
+                <h3>Kesar Soap</h3>
+
+                <p>Brightening skincare enriched with premium saffron.</p>
+
+                <a href="product.html" class="shop-btn">View Product</a>
+
+            </div>
+
+            <div class="about-product-card">
+
+                <img src="images/collections/ubtan.png" alt="Ubtan Soap">
+
+                <h3>Ubtan Soap</h3>
+
+                <p>Traditional herbal care for naturally glowing skin.</p>
+
+                <a href="product.html" class="shop-btn">View Product</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= INSTAGRAM ================= -->
+
+<!-- ================= FOLLOW US ================= -->
+
+<!-- ================= FOLLOW INSTAGRAM ================= -->
+
+<section class="instagram-follow">
+
+    <div class="container">
+
+        <div class="instagram-box">
+
+            <i class="bi bi-instagram instagram-icon"></i>
+
+            <h2>Follow Our Journey</h2>
+
+            <p>
+                Stay connected with Body & Butter for exclusive skincare tips,
+                new product launches, behind-the-scenes moments and special offers.
+            </p>
+
+            <a href="https://www.instagram.com/bodyandbutterr/"
+               target="_blank"
+               class="insta-btn">
+
+                @bodyandbutterr
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <div class="newsletter-box">
+
+            <h5>Stay Connected</h5>
+
+            <h2>Join The Body & Butter Family</h2>
+
+            <p>
+                Subscribe to receive skincare tips, exclusive offers, new product launches and special discounts directly in your inbox.
+            </p>
+
+<form id="newsletterForm" class="newsletter-form">
+
+    <input
+        type="email"
+        id="newsletterEmail"
+        placeholder="Enter your email address"
+        required>
+
+    <button type="submit">
+        Subscribe
+    </button>
+
+</form>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <img src="images/logo/logo.png" class="footer-logo">
+
+                <p>
+                    Luxury handcrafted skincare inspired by nature and made with love.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <div>
+
+                <h3>Products</h3>
+
+                <a href="#">Soap</a>
+                <a href="#">Face Wash</a>
+                <a href="#">Body Wash</a>
+                <a href="#">Serum</a>
+
+            </div>
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>support@bodyandbutter.com</p>
+
+                <p>+91 XXXXX XXXXX</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+
+            © 2026 Body & Butter. All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

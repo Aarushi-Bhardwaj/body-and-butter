@@ -1,0 +1,355 @@
+<!-- ================= SHOP HERO ================= -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Body & Butter | Shop</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body class="inner-page">
+    <!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo/logo.png" alt="Body & Butter">
+        </a>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ingredients.html">Ingredients</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-icons">
+
+        <button class="icon-btn" onclick="toggleSearch()">
+            <i class="bi bi-search"></i>
+        </button>
+
+        <a href="wishlist.html" class="icon-btn">
+            <i class="bi bi-heart"></i>
+        </a>
+
+        <a href="cart.html" class="icon-btn cart-icon">
+            <i class="bi bi-bag"></i>
+            <span id="cartCount" class="cart-count">0</span>
+        </a>
+
+    </div>
+
+</nav>
+
+</header>
+<div id="searchBox" class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+        onkeyup="searchProducts()">
+
+    <div id="searchResults"></div>
+
+</div>
+<!-- ================= PRODUCT DETAILS ================= -->
+
+<section class="product-details">
+
+    <div class="container">
+
+        <div class="product-wrapper">
+
+<div class="product-gallery">
+
+    <div class="main-image">
+
+        <img id="mainProduct"
+        src="images/products/lotion.png"
+        alt="Rose Soap">
+
+    </div>
+
+</div>
+            <div class="product-info">
+
+                <p class="breadcrumb">
+                    Home / Shop / Rose Soap
+                </p>
+
+                <h1>Body Lotion </h1>
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+               <div class="quantity-box">
+
+  <button onclick="decreaseQty()">-</button>
+
+<span id="qty">1</span>
+
+<button onclick="increaseQty()">+</button>
+
+</div> 
+
+                <p class="description">
+
+                   A deeply nourishing body lotion enriched with shea butter, aloe vera and vitamin E that keeps your skin soft, smooth and hydrated all day long.
+
+                </p>
+
+                <ul>
+
+                    <li>✔ Handmade in Small Batches</li>
+
+                    <li>✔ Natural Botanical Ingredients</li>
+
+                    <li>✔ Sulphate & Paraben Free</li>
+
+                    <li>✔ Suitable for Daily Use</li>
+
+                </ul>
+
+                <div class="product-buttons">
+
+<button
+class="btn"
+onclick="addToCart('Body Lotion',799,'images/products/lotion.png')">
+
+Add To Cart
+
+</button>
+
+<button
+class="btn-outline"
+onclick="buyNow('Body Lotion',799,'images/products/lotion.png')">
+
+Buy Now
+
+</button>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="product-benefits">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>Why You'll Love It</h5>
+
+            <h2>Key Benefits</h2>
+
+        </div>
+
+        <div class="promise-grid">
+
+            <div class="promise-card">
+                <i class="bi bi-droplet"></i>
+                <h3>Hydrates</h3>
+                <p>Keeps your skin soft and moisturized.</p>
+            </div>
+
+            <div class="promise-card">
+                <i class="bi bi-flower1"></i>
+                <h3>Natural Care</h3>
+                <p>Crafted with botanical ingredients.</p>
+            </div>
+
+            <div class="promise-card">
+                <i class="bi bi-heart"></i>
+                <h3>Gentle Formula</h3>
+                <p>Perfect for everyday skincare.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="ingredients">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>Ingredients</h5>
+
+            <h2>Made With Nature</h2>
+
+        </div>
+
+        <div class="about-features">
+
+     <div> 🥥 Shea Butter</div>   
+      <div>🌿 Aloe Vera</div>   
+       <div>💧 Vitamin E</div>  
+       <div>🌼 Chamomile Extract</div>  
+        </div>
+
+    </div>
+
+</section>
+<section class="instagram-follow">
+
+    <div class="container">
+
+        <div class="instagram-box">
+
+            <i class="bi bi-instagram instagram-icon"></i>
+
+            <h2>Follow Our Journey</h2>
+
+            <p>
+                Stay connected with Body & Butter for exclusive skincare tips,
+                new product launches, behind-the-scenes moments and special offers.
+            </p>
+
+            <a href="https://www.instagram.com/bodyandbutterr/"
+               target="_blank"
+               class="insta-btn">
+
+                @bodyandbutterr
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <div class="newsletter-box">
+
+            <h5>Stay Connected</h5>
+
+            <h2>Join The Body & Butter Family</h2>
+
+            <p>
+                Subscribe to receive skincare tips, exclusive offers, new product launches and special discounts directly in your inbox.
+            </p>
+
+           <form id="newsletterForm" class="newsletter-form">
+
+    <input
+        type="email"
+        id="newsletterEmail"
+        placeholder="Enter your email address"
+        required>
+
+    <button type="submit">
+        Subscribe
+    </button>
+
+</form>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <img src="images/logo/logo.png" class="footer-logo">
+
+                <p>
+                    Luxury handcrafted skincare inspired by nature and made with love.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <div>
+
+                <h3>Products</h3>
+
+                <a href="#">Soap</a>
+                <a href="#">Face Wash</a>
+                <a href="#">Body Wash</a>
+                <a href="#">Serum</a>
+
+            </div>
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>support@bodyandbutter.com</p>
+
+                <p>+91 XXXXX XXXXX</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+
+            © 2026 Body & Butter. All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Body & Butter | Blog</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body class="inner-page">
+   <header>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo/logo.png" alt="Body & Butter">
+        </a>
+    </div>
+
+   <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="ingredients.html">Ingredients</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+    <div class="nav-icons">
+
+        <button class="icon-btn" onclick="toggleSearch()">
+            <i class="bi bi-search"></i>
+        </button>
+
+        <a href="wishlist.html" class="icon-btn">
+            <i class="bi bi-heart"></i>
+        </a>
+
+        <a href="cart.html" class="icon-btn cart-icon">
+            <i class="bi bi-bag"></i>
+            <span id="cartCount" class="cart-count">0</span>
+        </a>
+
+    </div>
+
+</nav>
+
+
+</header>
+<div id="searchBox" class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+        onkeyup="searchProducts()">
+
+    <div id="searchResults"></div>
+
+</div>
+<!-- ================= BLOG HERO ================= -->
+
+<section class="blog-hero">
+
+<div class="container">
+
+<h5>Body & Butter Journal</h5>
+
+<h1>Skincare Tips & Natural Beauty</h1>
+
+<p>
+
+Explore expert skincare advice, ingredient guides and wellness articles inspired by nature.
+
+</p>
+
+</div>
+
+</section>
+<section class="featured-blog">
+
+<div class="container">
+
+<div class="featured-wrapper">
+
+<div class="featured-image">
+
+<img src="images/products/serum.png">
+
+</div>
+
+<div class="featured-content">
+
+<h5>Featured Article</h5>
+
+<h2>Why Face Serums Are Essential For Healthy Skin</h2>
+
+<p>
+
+A facial serum delivers concentrated active ingredients deep into the skin,
+helping improve hydration, texture and radiance.
+
+</p>
+
+<div class="blog-highlight">
+
+<p>
+Regular use of a quality face serum helps improve hydration,
+supports a smoother skin texture, reduces dullness and gives
+the skin a naturally healthy glow. Choose serums according to
+your skin type for the best results.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="blog-posts">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>Skincare Journal</h5>
+
+            <h2>Expert Tips For Naturally Healthy Skin</h2>
+
+            <p>
+                Explore practical skincare advice, ingredient knowledge, and wellness tips from the Body & Butter team.
+            </p>
+
+        </div>
+
+        <div class="blog-grid">
+
+            <!-- Article 1 -->
+
+            <div class="blog-card">
+
+                <img src="images/collections/rose.png" alt="Rose Extract">
+
+                <h3>Benefits of Rose Extract</h3>
+
+                <p>
+                    Rose Extract is known for its soothing and hydrating properties. Rich in natural antioxidants, it helps calm irritated skin, improve moisture retention, and leave your complexion feeling soft, refreshed, and naturally radiant. It is suitable for almost every skin type and is especially loved for its gentle floral fragrance.
+                </p>
+
+            </div>
+
+            <!-- Article 2 -->
+
+            <div class="blog-card">
+
+                <img src="images/collections/charcoal.png" alt="Activated Charcoal">
+
+                <h3>Why Activated Charcoal Is Great For Oily Skin</h3>
+
+                <p>
+                    Activated Charcoal acts like a magnet for dirt, excess oil, and impurities. It deeply cleanses clogged pores without stripping away essential moisture, making it an excellent ingredient for acne-prone and oily skin while helping maintain a balanced complexion.
+                </p>
+
+            </div>
+
+            <!-- Article 3 -->
+
+            <div class="blog-card">
+
+                <img src="images/products/sunscreen.png" alt="Sunscreen">
+
+                <h3>Never Skip Your Daily Sunscreen</h3>
+
+                <p>
+                    Daily sunscreen is one of the most important steps in any skincare routine. It protects your skin from harmful UV rays, reduces premature ageing, prevents pigmentation, and helps maintain an even skin tone throughout the year—even on cloudy days.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="skin-guide">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>Healthy Skin Guide</h5>
+
+            <h2>5 Everyday Habits For Beautiful Skin</h2>
+
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+                <i class="bi bi-droplet-half"></i>
+                <h3>Stay Hydrated</h3>
+                <p>Drink enough water throughout the day to help maintain your skin's natural moisture and elasticity.</p>
+            </div>
+
+            <div class="process-card">
+                <i class="bi bi-sun"></i>
+                <h3>Use SPF Daily</h3>
+                <p>Protect your skin from harmful UV rays by applying sunscreen every morning before stepping outdoors.</p>
+            </div>
+
+            <div class="process-card">
+                <i class="bi bi-moon-stars"></i>
+                <h3>Night Care Routine</h3>
+                <p>Cleanse your face before bed and apply a nourishing moisturizer to support overnight skin repair.</p>
+            </div>
+
+            <div class="process-card">
+                <i class="bi bi-flower1"></i>
+                <h3>Choose Natural Ingredients</h3>
+                <p>Products enriched with botanical extracts help nourish the skin gently while supporting long-term skin health.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="tips-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h5>Daily Tips</h5>
+
+<h2>Healthy Skin Starts With Healthy Habits</h2>
+
+</div>
+
+<div class="process-grid">
+
+<div class="process-card">
+
+<i class="bi bi-droplet-half"></i>
+
+<h3>Stay Hydrated</h3>
+
+<p>
+
+Drink plenty of water to keep your skin naturally healthy.
+
+</p>
+
+</div>
+
+<div class="process-card">
+
+<i class="bi bi-brightness-high"></i>
+
+<h3>Wear Sunscreen</h3>
+
+<p>
+
+Protect your skin every day from UV exposure.
+
+</p>
+
+</div>
+
+<div class="process-card">
+
+<i class="bi bi-moon-stars"></i>
+
+<h3>Night Routine</h3>
+
+<p>
+
+Cleanse and moisturize before sleeping.
+
+</p>
+
+</div>
+
+<div class="process-card">
+
+<i class="bi bi-heart"></i>
+
+<h3>Eat Healthy</h3>
+
+<p>
+
+A balanced diet supports naturally glowing skin.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+</section>
+<section class="instagram-follow">
+
+    <div class="container">
+
+        <div class="instagram-box">
+
+            <i class="bi bi-instagram instagram-icon"></i>
+
+            <h2>Follow Our Journey</h2>
+
+            <p>
+                Stay connected with Body & Butter for exclusive skincare tips,
+                new product launches, behind-the-scenes moments and special offers.
+            </p>
+
+            <a href="https://www.instagram.com/bodyandbutterr/"
+               target="_blank"
+               class="insta-btn">
+
+                @bodyandbutterr
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <div class="newsletter-box">
+
+            <h5>Stay Connected</h5>
+
+            <h2>Join The Body & Butter Family</h2>
+
+            <p>
+                Subscribe to receive skincare tips, exclusive offers, new product launches and special discounts directly in your inbox.
+            </p>
+
+<form id="newsletterForm" class="newsletter-form">
+
+    <input
+        type="email"
+        id="newsletterEmail"
+        placeholder="Enter your email address"
+        required>
+
+    <button type="submit">
+        Subscribe
+    </button>
+
+</form>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <img src="images/logo/logo.png" class="footer-logo">
+
+                <p>
+                    Luxury handcrafted skincare inspired by nature and made with love.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <div>
+
+                <h3>Products</h3>
+
+                <a href="#">Soap</a>
+                <a href="#">Face Wash</a>
+                <a href="#">Body Wash</a>
+                <a href="#">Serum</a>
+
+            </div>
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>support@bodyandbutter.com</p>
+
+                <p>+91 XXXXX XXXXX</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+
+            © 2026 Body & Butter. All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

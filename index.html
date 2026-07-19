@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Body & Butter</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo/logo.png" alt="Body & Butter">
+        </a>
+    </div>
+
+     <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="ingredients.html">Ingredients</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+    <div class="nav-icons">
+
+        <button class="icon-btn" onclick="toggleSearch()">
+            <i class="bi bi-search"></i>
+        </button>
+
+        <a href="wishlist.html" class="icon-btn">
+            <i class="bi bi-heart"></i>
+        </a>
+
+        <a href="cart.html" class="icon-btn cart-icon">
+            <i class="bi bi-bag"></i>
+            <span id="cartCount" class="cart-count">0</span>
+        </a>
+
+    </div>
+
+</nav>
+
+</header>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Ingredients</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+       <div class="nav-icons">
+
+    <button class="icon-btn" onclick="toggleSearch()">
+
+        <i class="bi bi-search"></i>
+
+    </button>
+
+    <a href="wishlist.html" class="icon-btn">
+
+        <i class="bi bi-heart"></i>
+
+    </a>
+
+    <a href="cart.html" class="icon-btn cart-icon">
+
+        <i class="bi bi-bag"></i>
+
+        <span id="cartCount" class="cart-count">0</span>
+
+    </a>
+
+</div>
+    </nav>
+
+</header>
+<div id="searchBox" class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+        onkeyup="searchProducts()">
+
+    <div id="searchResults"></div>
+
+</div>
+<!-- ================= HERO SECTION ================= -->
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h3>Luxury Handmade Skincare</h3>
+
+        <h1>
+            Handcrafted Luxury <br>
+            For Naturally <br>
+            Beautiful Skin
+        </h1>
+
+        <p>
+            Experience luxurious handmade soaps crafted with botanical ingredients that nourish, protect and celebrate your skin's natural beauty.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#" class="btn">Explore Collection</a>
+
+            <a href="#" class="btn-outline">Discover More</a>
+
+        </div>
+
+        <div class="scroll-down">
+            ↓
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FEATURED PRODUCTS ================= -->
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<section class="about">
+
+    <div class="container">
+
+        <div class="about-wrapper">
+
+            <div class="about-image">
+
+                <img src="images/about/bloom.png" alt="Body & Butter">
+
+            </div>
+
+            <div class="about-content">
+
+                <h5>Our Story</h5>
+
+                <h2>A Bloom You Can Feel</h2>
+                <div class="title-line"></div>
+
+                <p>
+                    At Body & Butter, we believe skincare should be pure,
+                    luxurious and inspired by nature. Every handcrafted soap is
+                    carefully made using premium botanical ingredients to nourish,
+                    protect and celebrate your skin.
+                </p>
+                <div class="quote">
+
+        “Nature creates beauty. We simply preserve it.”
+
+        </div>
+
+                <div class="about-features">
+
+                    <div>🌿 100% Handmade</div>
+
+                    <div>💚 Natural Ingredients</div>
+
+                    <div>✨ Gentle On Skin</div>
+
+                    <div>♻ Sustainable Packaging</div>
+
+                </div>
+
+                <a href="about.html" class="btn">
+                    Read Our Story
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-us">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>Why Choose Us</h5>
+
+            <h2>Nature's Best For Your Skin</h2>
+
+            <p>
+                Every Body & Butter product is thoughtfully handcrafted with premium botanical ingredients to deliver a luxurious skincare experience.
+            </p>
+
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+
+                <i class="bi bi-flower1"></i>
+
+                <h3>Natural Ingredients</h3>
+
+                <p>
+                    Carefully selected botanical ingredients for healthy skin.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="bi bi-stars"></i>
+
+                <h3>Handcrafted</h3>
+
+                <p>
+                    Every soap is handmade in small batches with attention to detail.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="bi bi-recycle"></i>
+
+                <h3>Eco Friendly</h3>
+
+                <p>
+                    Sustainable packaging with environmentally conscious practices.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="bi bi-heart-fill"></i>
+
+                <h3>Skin Loving</h3>
+
+                <p>
+                    Gentle formulas suitable for everyday skincare rituals.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= BEST SELLERS ================= -->
+
+<section class="best-sellers">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>Most Loved</h5>
+
+            <h2>Best Selling Soaps</h2>
+
+            <p>
+                Discover our customers' favourite handcrafted soaps made with premium natural ingredients.
+            </p>
+
+        </div>
+
+        <div class="best-grid">
+
+            <div class="best-card">
+
+                <img src="images/collections/rose.png">
+
+                <h3>Rose Soap</h3>
+
+                <span class="rating">★★★★★</span>
+
+                <a href="shop.html" class="shop-btn">Shop Now</a>
+
+            </div>
+
+            <div class="best-card">
+
+               <img src="images/collections/charcoal.png" alt="Charcoal Soap">
+
+                <h3>Activated Charcoal</h3>
+
+                <span class="rating">★★★★★</span>
+
+                <a href="shop.html" class="shop-btn">Shop Now</a>
+
+            </div>
+
+            <div class="best-card">
+
+           <img src="images/collections/kesar.png" alt="Kesar Soap">
+
+                <h3>Kesar Soap</h3>
+
+                <span class="rating">★★★★★</span>
+
+                <a href="shop.html" class="shop-btn">Shop Now</a>
+
+            </div>
+
+            <div class="best-card">
+
+                <img src="images/collections/ubtan.png" alt="Ubtan Soap">
+
+                <h3>Ubtan Soap</h3>
+
+                <span class="rating">★★★★★</span>
+
+                <a href="shop.html" class="shop-btn">Shop Now</a>
+
+            </div>
+
+        </div>
+<div class="best-grid">
+
+    <!-- Card 1 -->
+
+    <!-- Card 2 -->
+
+    <!-- Card 3 -->
+
+    <!-- Card 4 -->
+
+</div>
+
+<!-- ADD THE NEW BUBBLE HERE -->
+
+<div class="explore-shop-box">
+
+    <div class="explore-text">
+
+        <h3>✨ And Many More Products Await You</h3>
+
+        <p>
+            Explore our complete collection of handcrafted soaps, skincare essentials and luxurious self-care products.
+        </p>
+
+    </div>
+
+    <a href="shop.html" class="explore-btn">
+        Explore Shop →
+    </a>
+
+</div>
+
+</div>
+
+</section>
+    </div>
+
+</section>
+<!-- ================= NEW ARRIVALS ================= -->
+
+<!-- ================= NEW ARRIVALS ================= -->
+
+<section class="new-arrivals">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>✨ Just Launched</h5>
+
+            <h2>New Arrivals</h2>
+
+            <p>
+                Meet our latest skincare essentials, thoughtfully crafted to elevate your daily self-care routine.
+            </p>
+
+        </div>
+
+        <div class="arrival-grid">
+
+            <div class="arrival-card">
+                <span class="new-badge">NEW</span>
+                <img src="images/products/serum.png" alt="Face Serum">
+                <h3>Face Serum</h3>
+                <p>Premium Botanical Formula</p>
+
+<a href="shop.html" class="arrival-btn">
+    View Details
+</a>
+            </div>
+
+            <div class="arrival-card">
+                <span class="new-badge">NEW</span>
+                <img src="images/products/facewash.png" alt="Face Wash">
+                <h3>Face Wash</h3>
+                <p>Premium Botanical Formula</p>
+
+<a href="shop.html" class="arrival-btn">
+    View Details
+</a>
+            </div>
+
+            <div class="arrival-card">
+                <span class="new-badge">NEW</span>
+                <img src="images/products/bodywash.png" alt="Body Wash">
+                <h3>Body Wash</h3>
+                <p>Premium Botanical Formula</p>
+
+<a href="shop.html" class="arrival-btn">
+    View Details
+</a>
+            </div>
+
+            <div class="arrival-card">
+                <span class="new-badge">NEW</span>
+                <img src="images/products/lotion.png" alt="Body Lotion">
+                <h3>Body Lotion</h3>
+                <p>Premium Botanical Formula</p>
+
+<a href="shop.html" class="arrival-btn">
+    View Details
+</a>
+            </div>
+
+            <div class="arrival-card">
+                <span class="new-badge">NEW</span>
+                <img src="images/products/sunscreen.png" alt="Sunscreen">
+                <h3>Sunscreen</h3>
+                <p>Premium Botanical Formula</p>
+
+<a href="shop.html" class="arrival-btn">
+    View Details
+</a>
+            </div>
+
+        </div>
+
+        <div class="arrival-button">
+
+            <a href="shop.html" class="btn">
+                Explore New Collection
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>Customer Love</h5>
+
+            <h2>What Our Customers Say</h2>
+
+            <p>
+                Thousands of happy customers trust Body & Butter for their daily skincare routine.
+            </p>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "The handmade soaps feel incredibly luxurious. My skin has never felt this soft."
+                </p>
+
+                <h4>Priya Sharma</h4>
+
+                <span>Verified Customer</span>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Beautiful fragrance, premium packaging and amazing ingredients. Highly recommended!"
+                </p>
+
+                <h4>Riya Kapoor</h4>
+
+                <span>Verified Customer</span>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "I love the botanical ingredients. Every product feels handmade with care."
+                </p>
+
+                <h4>Neha Verma</h4>
+
+                <span>Verified Customer</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= INSTAGRAM ================= -->
+
+<!-- ================= FOLLOW US ================= -->
+
+<!-- ================= FOLLOW INSTAGRAM ================= -->
+
+<section class="instagram-follow">
+
+    <div class="container">
+
+        <div class="instagram-box">
+
+            <i class="bi bi-instagram instagram-icon"></i>
+
+            <h2>Follow Our Journey</h2>
+
+            <p>
+                Stay connected with Body & Butter for exclusive skincare tips,
+                new product launches, behind-the-scenes moments and special offers.
+            </p>
+
+            <a href="https://www.instagram.com/bodyandbutterr/"
+               target="_blank"
+               class="insta-btn">
+
+                @bodyandbutterr
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <div class="newsletter-box">
+
+            <h5>Stay Connected</h5>
+
+            <h2>Join The Body & Butter Family</h2>
+
+            <p>
+                Subscribe to receive skincare tips, exclusive offers, new product launches and special discounts directly in your inbox.
+            </p>
+
+           <form id="newsletterForm" class="newsletter-form">
+
+    <input
+        type="email"
+        id="newsletterEmail"
+        placeholder="Enter your email address"
+        required>
+
+    <button type="submit">
+        Subscribe
+    </button>
+
+</form>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <img src="images/logo/logo.png" class="footer-logo">
+
+                <p>
+                    Luxury handcrafted skincare inspired by nature and made with love.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <div>
+
+                <h3>Products</h3>
+
+                <a href="#">Soap</a>
+                <a href="#">Face Wash</a>
+                <a href="#">Body Wash</a>
+                <a href="#">Serum</a>
+
+            </div>
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>support@bodyandbutter.com</p>
+
+                <p>+91 XXXXX XXXXX</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+
+            © 2026 Body & Butter. All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

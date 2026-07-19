@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Body & Butter | Ingredients</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body class="inner-page">
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo/logo.png" alt="Body & Butter">
+        </a>
+    </div>
+
+      <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="ingredients.html" class="active">Ingredients</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+    <div class="nav-icons">
+
+        <button class="icon-btn" onclick="toggleSearch()">
+            <i class="bi bi-search"></i>
+        </button>
+
+        <a href="wishlist.html" class="icon-btn">
+            <i class="bi bi-heart"></i>
+        </a>
+
+        <a href="cart.html" class="icon-btn cart-icon">
+            <i class="bi bi-bag"></i>
+            <span id="cartCount" class="cart-count">0</span>
+        </a>
+
+    </div>
+
+</nav>
+
+</header>
+<div id="searchBox" class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+        onkeyup="searchProducts()">
+
+    <div id="searchResults"></div>
+
+</div>
+
+<!-- ================= HERO ================= -->
+
+<!-- ================= INGREDIENT HERO ================= -->
+
+<section class="ingredient-hero">
+
+    <div class="container">
+
+        <h5>Pure Botanical Ingredients</h5>
+
+        <h1>Nature's Finest For Your Skin</h1>
+
+        <p>
+            Every Body & Butter product is handcrafted using carefully selected botanical ingredients that nourish, protect and restore your skin naturally.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= INGREDIENTS ================= -->
+
+<section class="ingredients-grid">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>Botanical Collection</h5>
+
+            <h2>Ingredients We Love</h2>
+
+            <p>
+                Every ingredient is selected for its natural skincare benefits and premium quality.
+            </p>
+
+        </div>
+
+        <div class="ingredient-cards">
+
+            <div class="ingredient-card">
+                <img src="images/collections/rose.png" alt="">
+                <h3>Rose Extract</h3>
+                <p>Hydrates, refreshes and soothes the skin naturally.</p>
+            </div>
+
+            <div class="ingredient-card">
+                <img src="images/collections/charcoal.png" alt="">
+                <h3>Activated Charcoal</h3>
+                <p>Deep cleansing that removes impurities and excess oil.</p>
+            </div>
+
+            <div class="ingredient-card">
+                <img src="images/collections/kesar.png" alt="">
+                <h3>Kesar</h3>
+                <p>Known for brightening and improving skin radiance.</p>
+            </div>
+
+            <div class="ingredient-card">
+                <img src="images/collections/ubtan.png" alt="">
+                <h3>Ubtan</h3>
+                <p>A traditional herbal blend for glowing healthy skin.</p>
+            </div>
+
+            <div class="ingredient-card">
+                <img src="images/collections/multani-mitti.png" alt="">
+                <h3>Multani Mitti</h3>
+                <p>Absorbs excess oil while keeping skin refreshed.</p>
+            </div>
+
+            <div class="ingredient-card">
+                <img src="images/products/serum.png" alt="">
+                <h3>Vitamin Serum</h3>
+                <p>Boosts glow and improves skin texture.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= INGREDIENT SPOTLIGHT ================= -->
+
+<section class="ingredient-spotlight">
+
+    <div class="container">
+
+        <div class="spotlight-wrapper">
+
+            <div class="spotlight-image">
+
+                <img src="images/collections/rose.png" alt="Rose Soap">
+
+            </div>
+
+            <div class="spotlight-content">
+
+                <h5>Featured Ingredient</h5>
+
+                <h2>Rose Extract</h2>
+
+                <p>
+                    Rose Extract is rich in natural antioxidants and vitamins that help soothe,
+                    hydrate, and revitalize the skin. It provides a gentle cleansing experience
+                    while leaving your skin feeling soft, refreshed, and naturally radiant.
+                </p>
+
+                <ul>
+
+                    <li>🌹 Rich in antioxidants</li>
+
+                    <li>💧 Deeply hydrates skin</li>
+
+                    <li>✨ Improves natural glow</li>
+
+                    <li>🌿 Gentle on sensitive skin</li>
+
+                </ul>
+
+                <a href="shop.html" class="btn">
+                    Explore Products
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= BENEFITS ================= -->
+
+<section class="why-us">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>Why Natural?</h5>
+
+            <h2>Benefits Of Our Ingredients</h2>
+
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+
+                <i class="bi bi-droplet-half"></i>
+
+                <h3>Hydration</h3>
+
+                <p>Locks in moisture for soft and healthy skin.</p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="bi bi-stars"></i>
+
+                <h3>Natural Glow</h3>
+
+                <p>Enhances radiance with botanical goodness.</p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="bi bi-heart"></i>
+
+                <h3>Gentle Care</h3>
+
+                <p>Suitable for everyday skincare routines.</p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="bi bi-shield-check"></i>
+
+                <h3>Safe Formula</h3>
+
+                <p>Free from harsh chemicals and crafted with care.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= SOURCING ================= -->
+
+<section class="ingredient-source">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>Our Commitment</h5>
+
+            <h2>How We Source Our Ingredients</h2>
+
+            <p>
+                Every ingredient is carefully selected to ensure exceptional quality, purity, and effectiveness.
+            </p>
+
+        </div>
+
+        <div class="source-grid">
+
+            <div class="source-card">
+
+                <i class="bi bi-tree"></i>
+
+                <h3>Natural Origin</h3>
+
+                <p>
+                    We prioritize botanical ingredients sourced from nature wherever possible.
+                </p>
+
+            </div>
+
+            <div class="source-card">
+
+                <i class="bi bi-patch-check"></i>
+
+                <h3>Quality Tested</h3>
+
+                <p>
+                    Every ingredient is carefully checked before it becomes part of our skincare collection.
+                </p>
+
+            </div>
+
+            <div class="source-card">
+
+                <i class="bi bi-globe"></i>
+
+                <h3>Sustainable</h3>
+
+                <p>
+                    We support responsible sourcing practices that respect both people and the planet.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FAQ ================= -->
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>Frequently Asked Questions</h5>
+
+            <h2>Ingredient FAQs</h2>
+
+            <p>
+                Learn more about the natural ingredients and craftsmanship behind every Body & Butter product.
+            </p>
+
+        </div>
+
+        <div class="faq-grid">
+
+            <div class="faq-card">
+
+                <h3>🌿 Are your ingredients natural?</h3>
+
+                <p>
+                    Yes. We carefully select premium botanical ingredients such as Rose Extract, Activated Charcoal, Kesar, Ubtan, and Multani Mitti to create gentle and effective skincare products.
+                </p>
+
+            </div>
+
+            <div class="faq-card">
+
+                <h3>🐰 Are your products cruelty-free?</h3>
+
+                <p>
+                    Absolutely. We never test our products on animals and are committed to ethical, cruelty-free skincare practices.
+                </p>
+
+            </div>
+
+            <div class="faq-card">
+
+                <h3>💚 Are they suitable for sensitive skin?</h3>
+
+                <p>
+                    Most of our products are formulated with gentle botanical ingredients suitable for daily use. However, we recommend performing a patch test before first use.
+                </p>
+
+            </div>
+
+            <div class="faq-card">
+
+                <h3>🧼 Are all soaps handcrafted?</h3>
+
+                <p>
+                    Yes. Every Body & Butter soap is handcrafted in small batches to ensure premium quality, freshness, and attention to detail.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= CTA ================= -->
+
+<section class="ingredient-cta">
+
+    <div class="container">
+
+        <h2>Experience Nature In Every Product</h2>
+
+        <p>
+            Discover handcrafted skincare enriched with premium botanical ingredients and designed to nourish your skin every day.
+        </p>
+
+        <a href="shop.html" class="btn">
+            Shop Collection
+        </a>
+
+    </div>
+
+</section>
+<section class="instagram-follow">
+
+    <div class="container">
+
+        <div class="instagram-box">
+
+            <i class="bi bi-instagram instagram-icon"></i>
+
+            <h2>Follow Our Journey</h2>
+
+            <p>
+                Stay connected with Body & Butter for exclusive skincare tips,
+                new product launches, behind-the-scenes moments and special offers.
+            </p>
+
+            <a href="https://www.instagram.com/bodyandbutterr/"
+               target="_blank"
+               class="insta-btn">
+
+                @bodyandbutterr
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <div class="newsletter-box">
+
+            <h5>Stay Connected</h5>
+
+            <h2>Join The Body & Butter Family</h2>
+
+            <p>
+                Subscribe to receive skincare tips, exclusive offers, new product launches and special discounts directly in your inbox.
+            </p>
+
+            <form id="newsletterForm" class="newsletter-form">
+
+    <input
+        type="email"
+        id="newsletterEmail"
+        placeholder="Enter your email address"
+        required>
+
+    <button type="submit">
+        Subscribe
+    </button>
+
+</form>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <img src="images/logo/logo.png" class="footer-logo">
+
+                <p>
+                    Luxury handcrafted skincare inspired by nature and made with love.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <div>
+
+                <h3>Products</h3>
+
+                <a href="#">Soap</a>
+                <a href="#">Face Wash</a>
+                <a href="#">Body Wash</a>
+                <a href="#">Serum</a>
+
+            </div>
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>support@bodyandbutter.com</p>
+
+                <p>+91 XXXXX XXXXX</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+
+            © 2026 Body & Butter. All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- PASTE YOUR EXISTING INSTAGRAM SECTION HERE -->
+
+<!-- PASTE YOUR EXISTING NEWSLETTER SECTION HERE -->
+
+<!-- PASTE YOUR EXISTING FOOTER HERE -->
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
