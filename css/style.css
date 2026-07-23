@@ -5023,3 +5023,21 @@ width:100%;
     }
 
 }
+/* ===== Navbar Fix ===== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:99999;
+}
+
+.navbar{
+    z-index:99999;
+}
+
+.hero{
+    position:relative;
+    z-index:1;
+}
