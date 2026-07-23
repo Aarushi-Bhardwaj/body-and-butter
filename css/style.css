@@ -5041,3 +5041,12 @@ header{
     position:relative;
     z-index:1;
 }
+/* TEMP TEST */
+
+.hero{
+    pointer-events:none !important;
+}
+
+.hero-content{
+    pointer-events:auto !important;
+}
